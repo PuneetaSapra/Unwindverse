@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <!-- <p><img src="Unwindverse (7).png" alt="HTML5 Icon" style="width: 70px; height: 40px;"></p> -->
+            <div class="icon">
+                <h2><img src="logo.png" alt="HTML5 Icon" style="width: 120px; height: 60px;" ></h2>
+                <!-- <h2><UNWINDVERSE></h2> -->
+               <!-- <h2 class="navbar">Unwindverse</h2> -->
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="Login.html">LOGIN</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+               </ul>
+            </div>
+           
+            <div class="slider">
+              <img id="img-1" src="img1.jpg" alt="Image 1"/>
+              <img id="img-2" src="img2.jpeg" alt="Image 2"/>
+              <img id="img-3" src="img3.jpeg" alt="Image 3"/>
+            </div>
+            <div class="navigation-button">
+              <span class="dot active" onclick="changeSlide(0)"></span>
+              <span class="dot" onclick="changeSlide(1)"></span>
+              <span class="dot" onclick="changeSlide(2)"></span>
+            </div>
+            <script>
+              var imgs = document.querySelectorAll('.slider img');
+              var dots = document.querySelectorAll('.dot');
+              var currentImg = 0; // index of the first image 
+              const interval = 3000; // duration(speed) of the slide
+    
+              function changeSlide(n) {
+                for (var i = 0; i < imgs.length; i++) { // reset
+          imgs[i].style.opacity = 0;
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+    
+      currentImg = n;
+    
+      imgs[currentImg].style.opacity = 1;
+      dots[currentImg].className += ' active';
+    }
+            </script>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h1 class="feedback-form-title">Send us feedback</h1>
+      <form class="feedback-form">
+        <div class="form-group">
+          <label for="feedback-form-name">Name</label>
+          <input type="text" class="form-control" id="feedback-form-name" placeholder="Enter your name">
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="feedback-form-title">Title</label>
+          <input type="text" class="form-control" id="feedback-form-title" placeholder="Title of your feedback">
+        </div> -->
+
+        <div class="form-group">
+            <label for="feedback-form-message">Message</label>
+            <textarea type="text" placeholder="Enter your message, then hit the submit"  class="form-control" id="feedback-form-message" rows="6">
+<!-- <div class="feedback">
+<h1>FEEDBACK</h1>
+  <div id="panel" class="panel-container">
+    <strong>How satisfied are you with our <br /> website?</strong>
+    <!-- <div class="ratings-container">
+      <div class="rating">
+        <img src="https://image.flaticon.com/icons/svg/187/187150.svg" alt="">
+        <small>Unhappy</small>
+      </div> -->
+
+      <!-- <div class="rating">
+        <img src="https://image.flaticon.com/icons/svg/187/187136.svg" alt=""/>
+        <small>Neutral</small>
+      </div> -->
+
+      <!-- <div class="rating active">
+        <img src="https://image.flaticon.com/icons/svg/187/187133.svg" alt=""/>
+        <small>Satisfied</small>
+      </div> -->
+  </div>
+</div>
+    <button class="btn" id="send">Send Review</button>
+  </div> -->
+ 
+  <script src="script.js"></script>
+             </body>
+             </html>
+
+<!-- 
+            <title>Slideshow Images</title>
+    <style>
+      .slider {
+        width: 1230px;
+        height: 300px;
+        background-color: pink;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head> 
+  <body>
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <span id="slide-4"></span>
+      <span id="slide-5"></span>
+      <div class="image-container">
+        <img src="/uploads/media/default/0001/03/66cf5094908491e69d8187bcf934050a4800b37f.jpeg" class="slide" width="500" height="300" />
+        <img src="/uploads/media/default/0001/03/b7d624354d5fa22e38b0ab1f9b905fb08ccc6a05.jpeg" class="slide" width="500" height="300" />
+        <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" class="slide" width="500" height="300" />
+        <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" class="slide" width="500" height="300" />
+        <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" class="slide" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+        <a href="#slide-5"></a>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
+
+
+
+
+
+
+
