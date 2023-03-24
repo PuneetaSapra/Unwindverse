@@ -15,9 +15,11 @@
     width: auto;
     height: 70px;
     margin: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 10px;
-    background-color: darkblue;
-   
+    padding-bottom: 10px;
+    background-color: rgb(2, 2, 150);
 }
 
 .icon{
@@ -43,7 +45,7 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 62px;
+    margin-left: 40px;
     margin-top: 27px;
     font-size: 14px;
 }

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-color: rgb(102, 204, 255);
+    /* background: linear-gradient(to top, rgba(143, 221, 255, 0.5)50%,rgba(0, 11, 162, 0.5)50%), url(1.jpg); */
+    background-position: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: auto;
+    height: 70px;
+    margin: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(2, 2, 150);
+   
+}
+
+.icon{
+    width: 200px; 
+    float: left;
+    height: 70px;
+   
+}
+
+.menu{  
+    width: 450px;
+    float: right;
+    height: 70px;
+    margin-right: 10px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #6fcaff;
+}
+
+.form-container{
+    height: 600px;
+    width: 600px;
+    margin: 50px auto;
+}
+
+.form-container form{
+    padding-top: 40px;
+    height: 400px;
+    width: 600px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, rgb(220, 178, 254), rgb(79, 187, 255));
+    padding: 30px;
+    text-transform: capitalize;
+    border-radius: 30 px;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.form-containerform h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color:aqua;
+
+}
+
+.form-container form label{
+    font-size: 1.3rem;
+    padding: 3px 0;
+    margin: 5px 0 5px 0;
+
+}
+
+.form-container form input,textarea{
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0 5px 0;
+    border: none;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.3);
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.form-container form input[type="button"]{
+    align-self: flex-end;
+    height: 30px;
+    width: 150px;
+    font-size: 20; 
+}
