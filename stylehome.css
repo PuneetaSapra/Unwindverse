@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-color: rgb(102, 204, 255);
+    /* background: linear-gradient(to top, rgba(143, 221, 255, 0.5)50%,rgba(0, 11, 162, 0.5)50%), url(1.jpg); */
+    background-position: cover;
+    background-size: cover;
+    height: 650px;
+}
+
+.navbar{
+    width: auto;
+    height: 70px;
+    margin: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(2, 2, 150);
+   
+}
+
+.icon{
+    width: 200px; 
+    float: left;
+    height: 70px;
+   
+}
+
+.menu{  
+    width: 450px;
+    float: right;
+    height: 70px;
+    margin-right: 3px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul li{
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #6fcaff;
+}
+
+.btn {
+  background-color: #8f94fb;
+  color: #000;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 30px;
+   
+  }
+
+
+.btn {
+  background-color: rgba(199, 87, 143, 0.55); 
+  color: black; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  border: 2px solid #000000;
+}
+
+.btn:hover {
+  background-color: #794561;
+  color: white;
+}
