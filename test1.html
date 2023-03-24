@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="styletest1.css">
+</head>
+
+<style>
+
+    div.scroll {
+    background-color: #343c9697;
+    width: 650px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    padding-top: 200px;
+    padding-bottom: 600px;
+    padding: 20px;
+    }
+</style>
+
+<div class="scroll">
+  <div class="container">
+    <form id="form" name="abc" class="formrec" action="{url_for('mood')}" method='post'>
+     
+      <h2 required id="question">How is your day in your workplace?</h2>
+      <ul>
+        <li>
+          <input type="radio" name="wp" id="wp" value="3">
+          <label for="Good">Very Good</label>
+        </li>
+        <li>
+          <input type="radio" name="wp" id="wp" value="1">
+          <label for="0">Good</label>
+        </li>
+        <li>
+          <input type="radio" name="wp" id="wp" value="2">
+          <label for="Moderate">Moderate</label>
+        </li>
+        <li>
+          <input type="radio" name="wp" id="wp" value="0">
+          <label for="Bad">Bad</label>
+        </li>
+      </ul>
+      <br>
+
+        <h2 id="question">Have you received any good news today?</h2>
+        <ul>
+          <li>
+            
+            <input type="radio" name="gn" id="gn" value="1">
+            <label for="Yes">Yes</label>
+          </li>
+          <li>
+            <input type="radio" name="gn" id="gn" value="0">
+            <label for="No">No</label>
+          </li>
+         </ul> 
+         <br>
+      
+        <h2 id="question">I am full of energy. I am literally bouncing off the walls.</h2>
+        <ul>
+          <li>
+            <input type="radio" name="en" id="en" value="1">
+            <label for="True">True</label>
+          </li>
+          <li>
+            <input type="radio" name="en" id="en" value="0">
+            <label for="False">False</label>
+          </li>
+        </ul>
+     <br>
+          <h2 id="question">I am feeling gloomy.</h2>
+          <ul>
+            <li>
+              <input type="radio" name="gl" id="gl" value="1">
+              <label for="True">True</label>
+            </li>
+            <li>
+              <input type="radio" name="gl" id="gl" value="0">
+              <label for="False">False</label>
+            </li>
+          </ul>
+       <br>
+          <h2 id="question">I want to be left alone.</h2>
+          <ul>
+            <li>
+              <input type="radio" name="al" id="al" value="1">
+              <label for="True">True</label>
+            </li>
+            <li>
+              <input type="radio" name="al" id="al" value="0">
+              <label for="False">False</label>
+            </li>
+          </ul>
+        <br>
+          <h2 id="question">I feel overwhelmed by work or studies.</h2>
+          <ul>
+            <li>
+              <input type="radio" name="ws" id="ws" value="1">
+              <label for="True">True</label>
+            </li>
+            <li>
+              <input type="radio" name="ws" id="ws" value="0">
+              <label for="False">False</label>
+            </li>
+          </ul> 
+        <br>
+          <h2 id="question">I am dissatisfied with myself.</h2>
+          <ul>
+            <li>
+              <input type="radio" name="ds" id="ds" value="1">
+              <label for="True">True</label>
+            </li>
+            <li>
+              <input type="radio" name="ds" id="ds" value="0">
+              <label for="False">False</label>
+            </li>
+          </ul>
+        <br>
+          <h2 id="question">I live in a depressing environment.</h2>
+          <ul>
+            <li>
+              <input type="radio" name="ev" id="ev" value="1">
+              <label for="True">True</label>
+            </li>
+            <li>
+              <input type="radio" name="ev" id="ev" value="0">
+              <label for="False">False</label>
+            </li>
+          </ul>
+       <br>
+          <h2 id="question">I am extremely enthusiastic about my life.</h2>
+          <ul>
+            <li>
+              <input type="radio" name="lf" id="lf" value="1">
+              <label for="True">True</label>
+            </li>
+            <li>
+              <input type="radio" name="lf" id="lf" value="0">
+              <label for="False">False</label>
+            </li>
+          </ul>
+        <br>
+          <h2 id="question">I feel hopeless about my future.</h2>
+          <ul>
+            <li>
+              <input type="radio" name="ft" id="ft" value="1">
+              <label for="True">True</label>
+            </li>
+            <li>
+              <input type="radio" name="ft" id="ft" value="0">
+              <label for="False">False</label>
+            </li>
+          </ul>
+        <br>
+          <h2 id="question">Over the last two weeks have you been feeling down, depressed, irritable, or hopeless?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="ir" id="ir" value="2">
+              <label for="Not at all">Not at all</label>
+            </li>
+            <li>
+              <input type="radio" name="ir" id="ir" value="3">
+              <label for="Several days">Several days</label>
+            </li>
+            <li>
+              <input type="radio" name="ir" id="ir" value="0">
+              <label for="More than half the days">More than half the days</label>
+            </li>
+            <li>
+              <input type="radio" name="ir" id="ir" value="1">
+              <label for="Nearly every day">Nearly every day</label>
+            </li>
+          </ul>
+          <br>
+          <h2 id="question">Over the last two weeks have you had little interest or pleasure in doing things?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="pl" id="pl" value="2">
+              <label for="Not at all">Not at all</label>
+            </li>
+            <li>
+              <input type="radio" name="pl" id="pl" value="3">
+              <label for="Several days">Several days</label>
+            </li>
+            <li>
+              <input type="radio" name="pl" id="pl" value="0">
+              <label for="More than half the days">More than half the days</label>
+            </li>
+            <li>
+              <input type="radio" name="pl" id="pl" value="1">
+              <label for="Nearly every day">Nearly every day</label>
+            </li>
+          </ul>
+       <br>
+          <h2 id="question">Over the last two weeks have you had poor appetite, weight loss, or have you been overeating?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="ap" id="ap" value="2">
+              <label for="Not at all">Not at all</label>
+            </li>
+            <li>
+              <input type="radio" name="ap" id="ap" value="3">
+              <label for="Several days">Several days</label>
+            </li>
+            <li>
+              <input type="radio" name="ap" id="ap" value="0">
+              <label for="More than half the days">More than half the days</label>
+            </li>
+            <li>
+              <input type="radio" name="ap" id="ap" value="1">
+              <label for="Nearly every day">Nearly every day</label>
+            </li>
+          </ul>
+       <br>
+          <h2 id="question">Over the last two weeks have you been feeling tired, or have you had little energy?</h2>
+          <ul>
+            <li>
+              <input type="radio" name="tr" id="tr" value="2">
+              <label for="Not at all">Not at all</label>
+            </li>
+            <li>
+              <input type="radio" name="tr" id="tr" value="3">
+              <label for="Several days">Several days</label>
+            </li>
+            <li>
+              <input type="radio" name="tr" id="tr" value="0">
+              <label for="More than half the days">More than half the days</label>
+            </li>
+            <li>
+              <input type="radio" name="tr" id="tr" value="1">
+              <label for="Nearly every day">Nearly every day</label>
+            </li>
+          </ul>
+        </div>
+
+    <button type="submit">Submit</button>
+    <!-- <button id="next">Next</button> -->
+  </div>
+  </div>
+  </html></html>
